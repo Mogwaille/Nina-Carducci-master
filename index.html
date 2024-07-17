@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Ajout lang fr -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Déplacement de la balise meta charset en première ligne -->
+	<title>Photographe sur Bordeaux - Nina Carducci</title> <!-- Ajout de la balise title, référencement local -->
+	<meta name="description" 
+		content="Photographe professionnelle. 68 avenue Alsace-Lorraine, Bordeaux 33200. Shooting photo, retouches et album photos. 
+		05 56 67 78 89 du lundi au vendredi de 10h à 19h."> <!-- Ajout de la balise meta description, référencement local -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> <!-- Utilisation du fichier minimisé -->
+	<link rel="stylesheet" href="./assets/style.css"> <!-- Utilisation du fichier minimisé -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
+
+    <!-- Balise meta Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Photographe sur Bordeaux - Nina Carducci" />
+    <meta property="og:url" content="index.html" />
+	<meta property="og:locale" content="fr-FR">
+	<meta property="og:description" content="Photographe professionnelle à Bordeaux. Shooting photo, retouches et album photos." />
+    <meta property="og:image" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
+
+
+	<!-- Balise meta Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="Nina Carducci">
+	<meta name="twitter:title" content="Photographe sur Bordeaux - Nina Carducci">
+	<meta name="twitter:url" content="index.html">
+	<meta name="twitter:creator" content="Nina Carducci">
+	<meta name="twitter:description" content="Photographe professionnelle à Bordeaux. Shooting photo, retouches et album photos.">
+	<meta name="twitter:image" content="https://www.instagram.com/ninacarducci.photo/?hl=fr">
+</head>
+
+<body>
+
+<header> <!-- Création de la balise header -->
+	<div class="top-header">
+		<h1>Nina Carducci</h1> <!-- Mise en place de la balise H1 et suppression de la class --> 
+		<nav>
+			<ul> 
+				<li><a href="#about">À propos</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+				<li><a href="#services">Service</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="Logo Instagram"></a></li> <!-- Passage en webp, resize et ajout de la balise alt -->
+			</ul> <!-- Suppression d'une div et de plusieurs class -->
+		</nav> 
+	</div>
+</header>
+
+<main> <!-- Création de la balise main -->
+
+
+	<section name="carousel"> <!-- Création section carousel -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- Suppression de la div header -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Un business man japonais traversant un passage piéton de dos"> <!-- Passage en webp, resize et ajout de la balise alt -->
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Une foule vu de proche levant les bras lors d'un événement" loading="lazy"> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Deux mariés s'embrassant devant des personnes applaudissant" loading="lazy"> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+
+
+	<!-- Création section à propos -->
+	<section name="about">
+		<div id="about">
+			<div class="picture left">
+				<img src="./assets/images/nina.webp" alt="Une photo autoportait de Nina Carducci" loading="lazy"> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+			</div>
+			<div id="about-me">
+				<h2>A propos de moi</h2><br> <!-- Changement de balise en H2, ajout balise br et suppression de la class -->
+				<p class="spectral">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p> <!-- Changement de balise pour P -->
+				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Création section galerie -->
+	<section name="galerie">
+		<div id="gallery">
+			<h2>Portfolio</h2> <!-- Changement de balise pour H2 et suppression de class -->
+			<div class="container"> <!-- Renommage de la class et changement du CSS pour l'accessibilité -->
+				<div class="gallery" style="display: none">
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo d'un concert vu depuis la foule" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo portrait d'Ali Morshedlou" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photo en entreprise" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de main se rejoignant lors d'un mariage" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photo portrait de Donald Glover" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo du mariage de Jakob Owens" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Photo portrait de Nino Van Prattenburg" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo d'un concert d'Austin Neill" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo prise en entreprise" loading="lazy"/> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+				</div>
+			</div>
+			<div class="quote">
+				<figure>
+					<blockquote>
+						<p>Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p> <!-- Changement de balise pour P et suppression de la class -->
+					</blockquote>
+					<figcaption>- Richard Avedon</figcaption> <!-- Suppression de la class -->
+				</figure>
+			</div>
+		</div>
+	</section>
+		
+
+	<!-- Création section service -->
+	<section name="service">
+		<div id="services">
+			<h2>Mes services</h2> <!-- Changement de balise pour H2 et suppression de la class -->
+			<div class="container">
+				<div class="service">
+					<div class="service__description">
+						<h3>Shooting photo</h3> <!-- Changement de balise pour H3 -->
+						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p> <!-- Changement de balise pour P -->
+					</div>
+					<div class="service__price">
+						<h4>350€/demi journée</h4> <!-- Changement de balise pour H4 -->
+						<p>Matériel, déplacement inclus</p> <!-- Changement de balise pour P -->
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Retouches</h3> <!-- Changement de balise pour H3 -->
+						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p> <!-- Changement de balise pour P -->
+					</div>
+					<div class="service__price">
+						<h4>50€/photo</h4> <!-- Changement de balise pour H4 -->
+						<p>2 AR par photo</p> <!-- Changement de balise pour P -->
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Album photos</h3> <!-- Changement de balise pour H3 -->
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p> <!-- Changement de balise pour P -->
+					</div>
+					<div class="service__price">
+						<h4>400€ album A4</h4> <!-- Changement de balise pour H4 -->
+						<p>30 pages recto/verso</p> <!-- Changement de balise pour P -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<p>De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p> <!-- Changement de balise pour P et suppression de class -->
+				</blockquote>
+				<figcaption>- Richard Avedon</figcaption> <!-- Suppression de class -->
+			</figure>
+		</div>
+	</section>
+		
+
+</main>
+
+<footer> <!-- Création de la balise footer -->
+	<div class="container"> <!-- Suppression d'un div -->
+		<div class="form-container">
+			<h3>Une question ? Une demande de devis ?</h3>
+			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+			<form action="" method="post"> <!-- Modification du form pour ajouter des placeholder -->
+				<label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+				<label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email">
+				<label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message"></textarea>
+				<input type="submit" value="Envoyer"/>
+			</form>
+		</div>
+		<div class="picture right">
+			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo" loading="lazy"> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
+		</div>
+	</div><br>
+	<section id="contact"> <!-- Ajout de la section contact, optimisé référencement local avec Schema.org -->
+		<div itemscope itemtype="http://schema.org/Photographer">
+			<span itemprop="name">Photographe professionnelle - Nina Carducci</span>
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			  <span itemprop="streetAddress">68 avenue Alsace-Lorraine,</span>
+			  <span itemprop="addressLocality">Bordeaux</span>
+			  <span itemprop="postalCode">33200,</span>
+			  <span itemprop="addressRegion">Nouvelle-Aquitaine,</span>
+			  <span itemprop="addressCountry">France</span><br>
+              <span itemprop="openingHours">Lundi au Vendredi de 10h à 19h</span><br>
+              <span itemprop="telephone">05 56 67 78 89</span>
+		    </div>
+		</div>
+	</section>
+	<section id="share"> <!-- Ajout de la section partage sur les réseaux sociaux -->
+		<div class="social-share">
+			<a href="https://www.facebook.com/sharer/sharer.php?u=index.html" target="_blank"><i class="fab fa-facebook-f"></i> Partager sur Facebook</a>
+			<a href="https://twitter.com/intent/tweet?url=index.html&text=Photographe%20sur%20Bordeaux%20-%20Nina%20Carducci" target="_blank"><i class="fab fa-twitter"></i> Partager sur Twitter</a>
+		</div>
+	</section>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
+<script src="./assets/maugallery.min.js" async></script>
+<script src="./assets/scripts.min.js" async></script> <!-- Déplacement des scripts après le footer et ajout de async -->
+
+</body>
+
+</html>
