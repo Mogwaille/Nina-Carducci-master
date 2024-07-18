@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="UTF-8"> <!-- Déplacement de la balise meta charset en première ligne -->
-	<title>Photographe sur Bordeaux - Nina Carducci</title> <!-- Ajout de la balise title, référencement local -->
+	<title>Nina Carducci - Photographe sur Bordeaux</title> <!-- Ajout de la balise title, référencement local -->
 	<meta name="description" 
-		content="Photographe professionnelle. 68 avenue Alsace-Lorraine, Bordeaux 33200. Shooting photo, retouches et album photos. 
-		05 56 67 78 89 du lundi au vendredi de 10h à 19h."> <!-- Ajout de la balise meta description, référencement local -->
+		content="Photographe professionnelle sur Bordeaux, retrouvez moi au 68 avenue Alsace-Lorraine. 
+		Pour prendre rendez-vous, appelez le 05 56 67 78 89, du lundi au vendredi de 10h à 19h."> <!-- Ajout de la balise meta description, référencement local -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> <!-- Utilisation du fichier minimisé -->
-	<link rel="stylesheet" href="./assets/style.css"> <!-- Utilisation du fichier minimisé -->
+	<link rel="stylesheet" href="./assets/style.min.css"> <!-- Utilisation du fichier minimisé -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,11 +187,11 @@
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post"> <!-- Modification du form pour ajouter des placeholder -->
 				<label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
 				<label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="Votre email">
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
 				<label for="message">Message :</label>
-                <textarea id="message" name="message" placeholder="Votre message"></textarea>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
@@ -199,7 +199,7 @@
 			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo" loading="lazy"> <!-- Passage en webp, resize, loading lazy et ajout de la balise alt -->
 		</div>
 	</div><br>
-	<section id="contact"> <!-- Ajout de la section contact, optimisé référencement local avec Schema.org -->
+	<div class="contact"> <!-- Ajout de la div contact, optimisé référencement local avec Schema.org -->
 		<div itemscope itemtype="http://schema.org/Photographer">
 			<span itemprop="name">Photographe professionnelle - Nina Carducci</span>
 			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -211,20 +211,36 @@
               <span itemprop="openingHours">Lundi au Vendredi de 10h à 19h</span><br>
               <span itemprop="telephone">05 56 67 78 89</span>
 		    </div>
-		</div>
-	</section>
-	<section id="share"> <!-- Ajout de la section partage sur les réseaux sociaux -->
-		<div class="social-share">
-			<a href="https://www.facebook.com/sharer/sharer.php?u=index.html" target="_blank"><i class="fab fa-facebook-f"></i> Partager sur Facebook</a>
-			<a href="https://twitter.com/intent/tweet?url=index.html&text=Photographe%20sur%20Bordeaux%20-%20Nina%20Carducci" target="_blank"><i class="fab fa-twitter"></i> Partager sur Twitter</a>
-		</div>
-	</section>
+	    </div>
+	</div>
+	<div class="social-share"> <!-- Ajout de la div partage sur les réseaux sociaux -->
+		<a href="https://www.facebook.com/sharer/sharer.php?u=index.html" target="_blank"><i class="fab fa-facebook-f"></i> Partager sur Facebook</a>
+		<a href="https://twitter.com/intent/tweet?url=index.html&text=Photographe%20sur%20Bordeaux%20-%20Nina%20Carducci" target="_blank"><i class="fab fa-twitter"></i> Partager sur Twitter</a>
+	</div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
 <script src="./assets/maugallery.min.js" async></script>
 <script src="./assets/scripts.min.js" async></script> <!-- Déplacement des scripts après le footer et ajout de async -->
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Photographer",
+		"name": "Photographe professionnelle - Nina Carducci",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressRegion": "Nouvelle-Aquitaine",
+			"addressCountry": "France"
+		},
+		"openingHours": "Lundi au Vendredi de 10h à 19h",
+		"telephone": "05 56 67 78 89"
+	}
+</script> <!-- Référencement local avec Schema.org -->
 
 </body>
 

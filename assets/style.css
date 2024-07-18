@@ -112,10 +112,12 @@ body {
 	color: #000000;
 	background-color: #BEB45A;
 	border-radius:0 ;
+	cursor: pointer;
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 
 .item-column {
@@ -263,9 +265,9 @@ form textarea {
 	width: 100%;
 	background-color: transparent;
 	border: solid 1px;
-	height: 5em;
+	height: 2.5em;
 	line-height: 2.5em;
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-bottom: 20px;
 }
 
@@ -274,12 +276,17 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.contact {
+	text-align: center;
+}
+
 
 /** Share **/
 .social-share {
     margin-top: 20px;
     display: flex;
     gap: 10px;
+	justify-content: center;
 }
 
 .social-share a {
